@@ -101,7 +101,7 @@ function MyProject() {
           isOpen={!!selectedProject}
           onRequestClose={closeModal}
           contentLabel="Project Details"
-          className="modal-content"
+          className={`modal-content ${document.documentElement.classList.contains('dark') ? 'dark-modal-content' : ''}`}
           overlayClassName="modal-overlay"
         >
           <div className="p-4">
